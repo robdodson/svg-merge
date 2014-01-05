@@ -1,0 +1,20 @@
+{
+  "name": "svg-merge",
+  "description": "",
+  "version": "0.0.0",
+  "main": "svg-merge.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "dependencies": {
+    "libxmljs-easy": "~0.1.4",
+    "mkdirp": "~0.3.5",
+    "async": "~0.2.9"
+  },
+  "devDependencies": {
+    "should": "*",
+    "mocha": "*",
+    "file-utils": "~0.1.5",
+    "rimraf": "~2.2.5"
+  }
+}

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg  version="1.1" id="arrow-lg" x="0px" y="0px" width="128px" height="64px" viewBox="0 0 128 64" enable-background="new 0 0 128 64" xml:space="preserve" class="i">
+  <line fill="none" stroke="#010101" stroke-width="8" stroke-miterlimit="10" x1="0" y1="32" x2="118" y2="32"/>
+  <polygon id="fill_2_" fill="#010101" points="128,32 104,18 104,46 "/>
+  <polygon id="fill-accute_2_" display="none" fill="#010101" points="128,32 96,18 96,46 "/>
+  <polygon id="fill-angled_2_" display="none" fill="#010101" points="128,32 92,18 100,32 92,46 "/>
+  <polygon id="fill-oblique_2_" display="none" fill="#010101" points="128,32 114,14 114,50 "/>
+  <polygon id="fill-large_2_" display="none" fill="#010101" points="128,32 94,12 94,52 "/>
+  <polygon id="fill-large-accute_2_" display="none" fill="#010101" points="128,32 82,12 82,52 "/>
+  <polygon id="fill-large-oblique_2_" display="none" fill="#010101" points="128,32 110,8 110,56 "/>
+  <polygon id="fill-large-angled_2_" display="none" fill="#010101" points="128,32 78,12 90,32 78,52 "/>
+  <polygon id="line_2_" display="none" fill="#010101" points="128,32 104,8 94,8 118,32 94,56 104,56 "/>
+  <polygon id="line-accute_2_" display="none" fill="#010101" points="128,32 96,8 85,8 117,32 85,56 96,56 "/>
+  <polygon id="line-oblique_2_" display="none" fill="#010101" points="128,32 108,6 98,6 118,32 98,58 108,58 "/>
+  <polygon id="line-large_2_" display="none" fill="#010101" points="128,32 98,2 87,2 117,32 87,62 98,62 "/>
+  <polygon id="line-large-accute_2_" display="none" fill="#010101" points="128,32 88,2 76,2 116,32 76,62 88,62 "/>
+  <polygon id="line-large-oblique_2_" display="none" fill="#010101" points="128,32 104,0 94,0 118,32 94,64 104,64 "/>
+  </svg>
+  <svg  version="1.1" id="arrow-md" x="0px" y="0px" width="32px" height="19px" viewBox="0 0 32 19" enable-background="new 0 0 32 19" xml:space="preserve" class="i">
+  <line fill="none" stroke="#010101" stroke-width="3" stroke-miterlimit="10" x1="0" y1="9.5" x2="29" y2="9.5"/>
+  <polygon id="fill_1_" fill="#010101" points="32,9.5 26,14 26,5 "/>
+  <polygon id="fill-accute_1_" display="none" fill="#010101" points="32,9.5 23,14 23,5 "/>
+  <polygon id="fill-oblique_1_" display="none" fill="#010101" points="32,9.5 27,15 27,4 "/>
+  <polygon id="fill-angled_1_" display="none" fill="#010101" points="32,9.5 22,14 24,9.5 22,5 "/>
+  <polygon id="fill-large_1_" display="none" fill="#010101" points="32,9.5 23,16 23,3 "/>
+  <polygon id="fill-large-accute_1_" display="none" fill="#010101" points="32,9.5 20,16 20,3 "/>
+  <polygon id="fill-large-oblique_1_" display="none" fill="#010101" points="32,9.5 25,17 25,2 "/>
+  <polygon id="fill-large-angled_1_" display="none" fill="#010101" points="32,9.5 18,16 21,9.5 18,3 "/>
+  <polygon id="line_1_" display="none" fill="#010101" points="32,9.5 25,3 21.5,3 28.5,9.5 21.5,16 25,16 "/>
+  <polygon id="line-accute_1_" display="none" fill="#010101" points="32,9.5 23,3 19,3 28,9.5 19,16 23,16 "/>
+  <polygon id="line-oblique_1_" display="none" fill="#010101" points="32,9.5 26,2 23,2 29,9.5 23,17 26,17 "/>
+  <polygon id="line-large_1_" display="none" fill="#010101" points="32,9.5 21,1 17,1 28,9.5 17,18 21,18 "/>
+  <polygon id="line-large-accute_1_" display="none" fill="#010101" points="32,9.5 21,1 17,1 28,9.5 17,18 21,18 "/>
+  <polygon id="line-large-oblique_1_" display="none" fill="#010101" points="32,9.5 25,0 21.5,0 28.5,9.5 21.5,19 25,19 "/>
+  </svg>
+  <svg  version="1.1" id="arrow-sm" x="0px" y="0px" width="16px" height="10px" viewBox="0 0 16 10" enable-background="new 0 0 16 10" xml:space="preserve" class="i">
+  <line fill="none" stroke="#010101" stroke-width="2" stroke-miterlimit="10" x1="14" y1="5" x2="0" y2="5"/>
+  <polygon id="fill" fill="#010101" points="16,5 13,8 13,2 "/>
+  <polygon id="fill-accute" fill="#010101" points="16,5 11,8 11,2 "/>
+  <polygon id="fill-oblique" fill="#010101" points="16,5 13,9 13,1 "/>
+  <polygon id="fill-angled" fill="#010101" points="16,5 10,8 12,5 10,2 "/>
+  <polygon id="fill-large" fill="#010101" points="16,5 12,9 12,1 "/>
+  <polygon id="fill-large-accute" fill="#010101" points="16,5 9,9 9,1 "/>
+  <polygon id="fill-large-angled" fill="#010101" points="16,5 8,9 10,5 8,1 "/>
+  <polygon id="fill-large-oblique" fill="#010101" points="16,5 12,10 12,0 "/>
+  <polygon id="line" fill="#010101" points="16,5 12,1 10,1 14,5 10,9 12,9 "/>
+  <polygon id="line-accute" fill="#010101" points="16,5 11,1 8.5,1 13.5,5 8.5,9 11,9 "/>
+  <polygon id="line-oblique" fill="#010101" points="16,5 13,1 11,1 14,5 11,9 13,9 "/>
+  <polygon id="line-large" fill="#010101" points="16,5 11,0 8.5,0 13.5,5 8.5,10 11,10 "/>
+  <polygon id="line-large-accute" fill="#010101" points="16,5 10,0 7.5,0 13.5,5 7.5,10 10,10 "/>
+  <polygon id="line-large-oblique" fill="#010101" points="16,5 12,0 10,0 14,5 10,10 12,10 "/>
+  </svg>
+</svg>
