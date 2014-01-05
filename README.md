@@ -1,6 +1,6 @@
 # svg-merge
 
-[![Build Status](https://secure.travis-ci.org/user/svg-merge.png?branch=master)](http://travis-ci.org/user/svg-merge)
+[![Build Status](https://secure.travis-ci.org/robdodson/svg-merge.png?branch=master)](http://travis-ci.org/robdodson/svg-merge)
 
 
 ## Installation
@@ -14,7 +14,7 @@ npm install --save svg-merge
 
 ## API
 
-### svg-merge()
+### svg-merge(inputDir, outputDir, outputFilename)
 
 
 ## Testing
