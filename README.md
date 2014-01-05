@@ -14,7 +14,7 @@ npm install --save svg-merge
 
 ## API
 
-### svg-merge(inputDir, outputDir, outputFilename)
+### svgMerge(inputDir, outputDir, outputFilename)
 
 
 ## Testing
