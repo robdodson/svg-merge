@@ -47,12 +47,12 @@ describe('svgMerge()', function () {
     it('uses the classPrefix on the groups', function (done) {
       svgMerge(opts, function () {
         var svg = easy.parse(fs.readFileSync(outputPath, 'utf8'));
-        // expect(svg.g[0].$class).to.equal('iconic-arrow-lg');
-        // expect(svg.g[1].$class).to.equal('iconic-arrow-md');
-        // expect(svg.g[2].$class).to.equal('iconic-arrow-sm');
-        console.log(svg.g[0].$class);
-        console.log(svg.g[1].$class);
-        console.log(svg.g[2].$class);
+        // elements are in reverse alphabetical order in older versions of
+        // node, so just check that the classes actually made it in there
+        var classes = [svg.g[0].$class, svg.g[1].$class, svg.g[2].$class];
+        expect(classes.indexOf('iconic-arrow-lg')).to.not.equal(-1);
+        expect(classes.indexOf('iconic-arrow-md')).to.not.equal(-1);
+        expect(classes.indexOf('iconic-arrow-sm')).to.not.equal(-1);
         done();
       });
     });
