@@ -33,19 +33,20 @@ module.exports = function (inputDir, outputDir, outputFile, done) {
   function stackFiles(files, callback) {
     var stack = [];
     files.forEach(function (file) {
-      var id = path.basename(file, '.svg');
       var svgXml = fs.readFileSync(file, 'utf8');
       var svg = easy.parse(svgXml);
 
-      // manipulate svg
-      svg.$class = 'i';
-      svg.$id = id;
+      // strip out opening and closing svg tags
+      // returning just a string with the internals
+      svg = svg.$.toString()
+        .replace(/^<svg.*>/, '')
+        .replace(/<\/svg>$/, '');
+
+      var group = easy.parse(['<g>', svg, '</g>'].join(''));
+      group.$class = path.basename(file, '.svg');
 
       stack.push({
-        id: id,
-        svg: svg.$.toString().replace('xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"', ''),
-        w: svg.$width,
-        h: svg.$height
+        group: group.$.toString()
       });
     });
     callback(null, stack);
@@ -56,12 +57,12 @@ module.exports = function (inputDir, outputDir, outputFile, done) {
     svg.push('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">');
     // need to make same ids from different files unique
     stack.forEach(function(icon) {
-      svg.push(icon.svg);
+      svg.push(icon.group);
     });
     
     svg.push('</svg>');
 
-    var svgText = svg.join("\n");
+    var svgText = svg.join('\n');
     callback(null, svgText);
   }
 
