@@ -6,7 +6,12 @@ var fs = require('fs'),
     async = require('async'),
     mkdirp = require('mkdirp');
 
-module.exports = function (inputDir, outputDir, outputFile, done) {
+module.exports = function (opts, done) {
+  var inputDir = opts.inputDir;
+  var outputDir = opts.outputDir;
+  var outputFile = opts.outputFile;
+  var classPrefix = opts.classPrefix;
+
   // Use optional outputFile name or set it equal to the output dir
   // plus a '-out' suffix. So foo/arrow would produce bar/arrow/arrow-out.svg
   // outputFile = outputFile || inputDir.split(path.sep).pop() + '-out.svg';
@@ -43,7 +48,10 @@ module.exports = function (inputDir, outputDir, outputFile, done) {
         .replace(/<\/svg>$/, '');
 
       var group = easy.parse(['<g>', svg, '</g>'].join(''));
-      group.$class = path.basename(file, '.svg');
+      group.$class = [
+        classPrefix,
+        classPrefix + '-' + path.basename(file, '.svg')
+      ].join(' ');
 
       stack.push({
         group: group.$.toString()

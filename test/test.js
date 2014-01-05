@@ -14,6 +14,7 @@ var inputDir = path.join(__dirname, 'fixtures', 'arrow');
 var outputDir = path.join(__dirname, '../tmp/arrow');
 var outputFile = 'arrow-out.svg';
 var outputPath = path.join(outputDir, outputFile);
+var classPrefix = 'iconic';
 
 describe('svgMerge()', function () {
   beforeEach(function () {
@@ -21,7 +22,14 @@ describe('svgMerge()', function () {
   });
 
   it('outputs an svg', function (done) {
-    svgMerge(inputDir, outputDir, outputFile, function () {
+    var opts = {
+      inputDir: inputDir,
+      outputDir: outputDir,
+      outputFile: outputFile,
+      classPrefix: classPrefix
+    };
+
+    svgMerge(opts, function () {
       expect(file.exists(outputPath)).to.equal(true);
       done();
     });
