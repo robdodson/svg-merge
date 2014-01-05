@@ -48,10 +48,7 @@ module.exports = function (opts, done) {
         .replace(/<\/svg>$/, '');
 
       var group = easy.parse(['<g>', svg, '</g>'].join(''));
-      group.$class = [
-        classPrefix,
-        classPrefix + '-' + path.basename(file, '.svg')
-      ].join(' ');
+      group.$class = [classPrefix, path.basename(file, '.svg')].join('-');
 
       stack.push({
         group: group.$.toString()

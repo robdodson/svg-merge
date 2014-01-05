@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g class="iconic iconic-arrow-lg">
+<g class="iconic-arrow-lg">
 <line fill="none" stroke="#010101" stroke-width="8" stroke-miterlimit="10" x1="0" y1="32" x2="118" y2="32"/>
 <polygon id="fill_2_" fill="#010101" points="128,32 104,18 104,46 "/>
 <polygon id="fill-accute_2_" display="none" fill="#010101" points="128,32 96,18 96,46 "/>
@@ -16,7 +16,7 @@
 <polygon id="line-large-accute_2_" display="none" fill="#010101" points="128,32 88,2 76,2 116,32 76,62 88,62 "/>
 <polygon id="line-large-oblique_2_" display="none" fill="#010101" points="128,32 104,0 94,0 118,32 94,64 104,64 "/>
 </g>
-<g class="iconic iconic-arrow-md">
+<g class="iconic-arrow-md">
 <line fill="none" stroke="#010101" stroke-width="3" stroke-miterlimit="10" x1="0" y1="9.5" x2="29" y2="9.5"/>
 <polygon id="fill_1_" fill="#010101" points="32,9.5 26,14 26,5 "/>
 <polygon id="fill-accute_1_" display="none" fill="#010101" points="32,9.5 23,14 23,5 "/>
@@ -33,7 +33,7 @@
 <polygon id="line-large-accute_1_" display="none" fill="#010101" points="32,9.5 21,1 17,1 28,9.5 17,18 21,18 "/>
 <polygon id="line-large-oblique_1_" display="none" fill="#010101" points="32,9.5 25,0 21.5,0 28.5,9.5 21.5,19 25,19 "/>
 </g>
-<g class="iconic iconic-arrow-sm">
+<g class="iconic-arrow-sm">
 <line fill="none" stroke="#010101" stroke-width="2" stroke-miterlimit="10" x1="14" y1="5" x2="0" y2="5"/>
 <polygon id="fill" fill="#010101" points="16,5 13,8 13,2 "/>
 <polygon id="fill-accute" fill="#010101" points="16,5 11,8 11,2 "/>

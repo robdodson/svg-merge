@@ -21,7 +21,7 @@ describe('svgMerge()', function () {
     rimraf.sync('tmp');
   });
 
-  it('outputs an svg', function (done) {
+  describe('arrow', function () {
     var opts = {
       inputDir: inputDir,
       outputDir: outputDir,
@@ -29,9 +29,29 @@ describe('svgMerge()', function () {
       classPrefix: classPrefix
     };
 
-    svgMerge(opts, function () {
-      expect(file.exists(outputPath)).to.equal(true);
-      done();
+    it('outputs an svg', function (done) {
+      svgMerge(opts, function () {
+        expect(file.exists(outputPath)).to.equal(true);
+        done();
+      });
+    });
+
+    it('has a group for every file', function (done) {
+      svgMerge(opts, function () {
+        var svg = easy.parse(fs.readFileSync(outputPath, 'utf8'));
+        expect(svg.g.length).to.equal(3);
+        done();
+      });
+    });
+
+    it('uses the classPrefix on the groups', function (done) {
+      svgMerge(opts, function () {
+        var svg = easy.parse(fs.readFileSync(outputPath, 'utf8'));
+        expect(svg.g[0].$class).to.equal('iconic-arrow-lg');
+        expect(svg.g[1].$class).to.equal('iconic-arrow-md');
+        expect(svg.g[2].$class).to.equal('iconic-arrow-sm');
+        done();
+      });
     });
   });
 });
