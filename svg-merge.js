@@ -10,7 +10,6 @@ module.exports = function (opts, done) {
   var inputDir = opts.inputDir;
   var outputDir = opts.outputDir;
   var outputFile = opts.outputFile;
-  var classPrefix = opts.classPrefix;
 
   // Use optional outputFile name or set it equal to the output dir
   // plus a '-out' suffix. So foo/arrow would produce bar/arrow/arrow-out.svg
@@ -48,7 +47,6 @@ module.exports = function (opts, done) {
         .replace(/<\/svg>$/, '');
 
       var group = easy.parse(['<g>', svg, '</g>'].join(''));
-      group.$class = [classPrefix, path.basename(file, '.svg')].join('-');
 
       stack.push({
         group: group.$.toString()

@@ -14,7 +14,6 @@ var inputDir = path.join(__dirname, 'fixtures', 'arrow');
 var outputDir = path.join(__dirname, '../tmp/arrow');
 var outputFile = 'arrow-out.svg';
 var outputPath = path.join(outputDir, outputFile);
-var classPrefix = 'iconic';
 
 describe('svgMerge()', function () {
   beforeEach(function () {
@@ -25,8 +24,7 @@ describe('svgMerge()', function () {
     var opts = {
       inputDir: inputDir,
       outputDir: outputDir,
-      outputFile: outputFile,
-      classPrefix: classPrefix
+      outputFile: outputFile
     };
 
     it('outputs an svg', function (done) {
@@ -44,17 +42,5 @@ describe('svgMerge()', function () {
       });
     });
 
-    it('uses the classPrefix on the groups', function (done) {
-      svgMerge(opts, function () {
-        var svg = easy.parse(fs.readFileSync(outputPath, 'utf8'));
-        // elements are in reverse alphabetical order in older versions of
-        // node, so just check that the classes actually made it in there
-        var classes = [svg.g[0].$class, svg.g[1].$class, svg.g[2].$class];
-        expect(classes.indexOf('iconic-arrow-lg')).to.not.equal(-1);
-        expect(classes.indexOf('iconic-arrow-md')).to.not.equal(-1);
-        expect(classes.indexOf('iconic-arrow-sm')).to.not.equal(-1);
-        done();
-      });
-    });
   });
 });

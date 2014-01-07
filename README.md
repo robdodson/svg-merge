@@ -42,13 +42,6 @@ Type: `String`
 
 Desired file name for output file.
 
-#### options.classPrefix
-
-Default: `iconic`  
-Type: `String`
-
-Prefix class names coming from svg files. Ex: `class="arrow-lg"` becomes `class="iconic-arrow-lg"`.
-
 ## Testing
 
 From the repo root:
