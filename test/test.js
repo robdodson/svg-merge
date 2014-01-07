@@ -27,14 +27,14 @@ describe('svgMerge()', function () {
       outputFile: outputFile
     };
 
-    it('outputs an svg', function (done) {
+    it('should output an svg', function (done) {
       svgMerge(opts, function () {
         expect(file.exists(outputPath)).to.equal(true);
         done();
       });
     });
 
-    it('has a group for every file', function (done) {
+    it('should create a group for every file', function (done) {
       svgMerge(opts, function () {
         var svg = easy.parse(fs.readFileSync(outputPath, 'utf8'));
         expect(svg.g.length).to.equal(3);
