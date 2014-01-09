@@ -43,7 +43,7 @@ module.exports = function (opts, done) {
       // strip out opening and closing svg tags
       // returning just a string with the internals
       svg = svg.$.toString()
-        .replace(/^<svg.*>/, '')
+        .replace(/<svg[^<]*/, '')
         .replace(/<\/svg>$/, '');
 
       var group = easy.parse(['<g>', svg, '</g>'].join(''));
